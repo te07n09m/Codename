@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/game.css">
+    <title>スパイ | コードネーム</title>
+</head>
+<body>
+    <header>
+        <div class="button-box">
+            <a class="confirm-link" href="/entrance" data-linkname="トップ">トップ</a>
+            <a class="confirm-link" href="/game/create" data-linkname="新規ゲーム">新規ゲーム</a>
+        </div>
+    </header>
+    <main>
+        <div class="content-box">
+            <p id="spy-id">SPY:<%= game._id %></p>
+            <div class="grid-box">
+                <% for(let i = 0; i < 25; i++) { %>
+                    <div class="card" style="z-index: <%= 100 - i %>;">
+                        <p><%= game.words[i] %></p>
+                        <div class="color-card <%= game.colors[i] %>"></div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+        <div class="content-box">
+            <p>スパイマスター用ページ</p>
+            <div id="qrcode"></div>
+            <a id="master-link" class="confirm-link" data-linkname="スパイマスター用ページ"></a>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="/js/spy.js"></script>
+</body>
+</html>

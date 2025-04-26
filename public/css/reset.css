@@ -1,0 +1,89 @@
+/* Reset CSS */
+
+/* ボックスモデルの統一 */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* リストのスタイルをリセット */
+ul, ol {
+    list-style: none;
+}
+
+/* リンクのデフォルトスタイルを削除 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 画像の扱いを統一 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* フォーム要素の標準化 */
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* ボタンのスタイルを統一 */
+button {
+    cursor: pointer;
+}
+
+/* テキストの基本スタイル */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* HTML5要素のデフォルトスタイルをリセット */
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+
+
+/* このアプリ用設定 */
+html {
+    background-color: #f3ede6;
+}
+html * {
+    background-color: inherit;
+}
+
+header, main, footer {
+    margin: 1em;
+}
+
+header .button-box {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+main .content-box {
+    padding: 2em;
+    background-color: #fdfbf7;
+    border-radius: 1em;
+    margin: 1em 0;
+}
+
+a {
+    text-decoration: underline;
+    color: #7fbfff;
+}
+
+ol {
+    list-style: decimal outside;
+    padding-left: 1.2em;
+}
