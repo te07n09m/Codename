@@ -14,11 +14,13 @@
             <div class="grid-box">
                 <% for(let i = 0; i < 25; i++) { %>
                     <div class="card <%= game.colors[i] %>">
-                        <p><%= game.words[i] %></p>
+                        <p class="word"><%= game.words[i] %></p>
                     </div>
                 <% } %>
             </div>
         </div>
     </main>
+
+    <script src="/js/resizeWord.js"></script>
 </body>
 </html>

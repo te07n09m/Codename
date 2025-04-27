@@ -20,7 +20,7 @@
             <div class="grid-box">
                 <% for(let i = 0; i < 25; i++) { %>
                     <div class="card" style="z-index: <%= 100 - i %>;">
-                        <p><%= game.words[i] %></p>
+                        <p class="word"><%= game.words[i] %></p>
                         <div class="color-card <%= game.colors[i] %>"></div>
                     </div>
                 <% } %>
@@ -35,5 +35,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="/js/spy.js"></script>
+    <script src="/js/resizeWord.js"></script>
 </body>
 </html>

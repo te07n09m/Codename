@@ -81,6 +81,7 @@ main .content-box {
 a {
     text-decoration: underline;
     color: #7fbfff;
+    overflow-wrap: break-word;
 }
 
 ol {
